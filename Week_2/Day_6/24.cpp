@@ -3,22 +3,17 @@ using namespace std;
 
 int main()
 {
-    int n;
-    cin >> n;
+    int x, n , a;
+    cin >> x >> n;
 
-    int count = 0;
+    a = 1;
 
-    while (n > 0)
+    for (int i = 1; i <= n; i++)
     {
-        if (n % 2 == 1)
-        {
-            count++;
-        }
-
-        n /= 2;
+        a *= x;
     }
 
-    cout << count;
+    cout << a;
 
     return 0;
 }
